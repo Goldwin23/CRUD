@@ -6,11 +6,10 @@
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
         $email = $_POST['email'];
-        $birthday = $_POST['birthday'];
         $address = $_POST['address'];
         $gender = $_POST['gender'];
 
-        $sql = "UPDATE `crudtable` SET `firstname`='$first_name',`lastname`='$last_name',`email`='$email', `address`='$address',`gender`='$gender' WHERE id=$id";
+        $sql = "UPDATE `users` SET `firstname`='$first_name',`lastname`='$last_name',`email`='$email', `address`='$address',`gender`='$gender' WHERE id=$id";
 
         $result = mysqli_query($conn, $sql);
 
