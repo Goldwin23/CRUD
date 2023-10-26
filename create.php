@@ -8,7 +8,7 @@
         $address = $_POST['address'];
         $gender = $_POST['gender'];
 
-        $sql = "INSERT INTO `crudtable`(`id`, `firstname`, `lastname`, `email`, `address`, `gender`) VALUES (NULL,'$first_name','$last_name','$email','$address', '$gender')";
+        $sql = "INSERT INTO `users`(`id`, `firstname`, `lastname`, `email`, `address`, `gender`) VALUES (NULL,'$first_name','$last_name','$email','$address', '$gender')";
 
         $result = mysqli_query($conn, $sql);
 
@@ -61,10 +61,6 @@
                 <div class="mb-2">
                     <label class="form-label" style="font-weight: 800;">Email:</label>
                     <input type="text" class="form-control" name="email" placeholder="name@example.com"  required>
-                </div>
-                <div class="mb-2">
-                    <label class="form-label" style="font-weight: 800;">Date of Birth:</label>
-                    <input type="date" class="form-control" name="birthday" placeholder="Enter your Birthday"  required>
                 </div>
 
                 <div class="mb-3">
